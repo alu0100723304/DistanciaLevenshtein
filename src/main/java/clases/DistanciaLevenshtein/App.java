@@ -1,8 +1,8 @@
 package clases.DistanciaLevenshtein;
 
 /**
- * Hello world!
- *
+ * @author Joel Perez Ramos
+ * Clase Principal
  */
 public class App {
 	public static void main(String[] args) {
