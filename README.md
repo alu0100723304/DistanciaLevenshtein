@@ -4,6 +4,6 @@ La **Distancia de Levenshtein**, **Distancia de Edición** o **Distancia entre p
 
 Por ejemplo, la distancia de Levenshtein entre "casa" y "calle" es de 3 porque se necesitan al menos tres ediciones elementales para cambiar uno en el otro.
 
-..* casa → cala (sustitución de 's' por 'l')
-..* cala → calla (inserción de 'l' entre 'l' y 'a')
-..* calla → calle (sustitución de 'a' por 'e')
+* casa → cala (sustitución de 's' por 'l')
+* cala → calla (inserción de 'l' entre 'l' y 'a')
+* calla → calle (sustitución de 'a' por 'e')
