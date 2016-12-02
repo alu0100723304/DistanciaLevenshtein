@@ -7,3 +7,10 @@ Por ejemplo, la distancia de Levenshtein entre "casa" y "calle" es de 3 porque s
 * casa → cala (sustitución de 's' por 'l')
 * cala → calla (inserción de 'l' entre 'l' y 'a')
 * calla → calle (sustitución de 'a' por 'e')
+
+Se le considera una generalización de la [distancia de Hamming](https://es.wikipedia.org/wiki/Distancia_de_Hamming), que se usa para cadenas de la misma longitud y que solo considera como operación la sustitución. Hay otras generalizaciones de la distancia de Levenshtein, como la [distancia de Damerau-Levenshtein](https://es.wikipedia.org/wiki/Distancia_de_Damerau-Levenshtein), que consideran el intercambio de dos caracteres como una operación.
+
+Como buena "distancia", cumple (aunque es complicado demostrarlo formalmente), que:
+
+  Dist(A,B) == Dist(B,A)
+  Dist(A,B) + Dist(B,C) >= Dist(A,C)
