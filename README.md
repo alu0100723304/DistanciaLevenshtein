@@ -12,7 +12,5 @@ Se le considera una generalización de la [distancia de Hamming](https://es.wiki
 
 Como buena "distancia", cumple (aunque es complicado demostrarlo formalmente), que
 
-Dist(A,B) == Dist(B,A).
-Dist(A,B) + Dist(B,C) >= Dist(A,C).
-
-a
+* Dist(A,B) == Dist(B,A)
+* Dist(A,B) + Dist(B,C) >= Dist(A,C).
