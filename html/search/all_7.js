@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['testapp',['testApp',['../classclases_1_1_distancia_levenshtein_1_1_app_test.html#afe16cffbe326f0e959c29805ac205c90',1,'clases::DistanciaLevenshtein::AppTest']]],
+  ['testcomputelevenshteindistance',['testComputeLevenshteinDistance',['../classclases_1_1_distancia_levenshtein_1_1_levenshtein_distance_test01.html#aae192451049290eabe6d0ac2e00f254b',1,'clases.DistanciaLevenshtein.LevenshteinDistanceTest01.testComputeLevenshteinDistance()'],['../classclases_1_1_distancia_levenshtein_1_1_levenshtein_distance_test02.html#a0fb8d5113fa9cf3ce9f2378b06b3fdd7',1,'clases.DistanciaLevenshtein.LevenshteinDistanceTest02.testComputeLevenshteinDistance()'],['../classclases_1_1_distancia_levenshtein_1_1_levenshtein_distance_test03.html#afa83a142e84686e31e74757c35a8db60',1,'clases.DistanciaLevenshtein.LevenshteinDistanceTest03.testComputeLevenshteinDistance()'],['../classclases_1_1_distancia_levenshtein_1_1_levenshtein_distance_test04.html#a066861d7e72c8c5912e032286e892f67',1,'clases.DistanciaLevenshtein.LevenshteinDistanceTest04.testComputeLevenshteinDistance()']]]
+];

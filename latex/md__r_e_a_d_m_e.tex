@@ -1,0 +1,58 @@
+\subsection*{Descripción\+:}
+
+La {\bfseries Distancia de Levenshtein}, {\bfseries Distancia de Edición} o {\bfseries Distancia entre palabras} es el número mínimo de operaciones requeridas para transformar una \href{https://es.wikipedia.org/wiki/Cadena_de_caracteres}{\tt cadena de caracteres} en otra, se usa ampliamente en \href{https://es.wikipedia.org/wiki/Teor%C3%ADa_de_la_informaci%C3%B3n}{\tt teoría de la información} y \href{https://es.wikipedia.org/wiki/Ciencias_de_la_computaci%C3%B3n}{\tt ciencias de la computación}. Se entiende por operación, bien una inserción, eliminación o la sustitución de un carácter. Esta distancia recibe ese nombre en honor al científico ruso \href{https://es.wikipedia.org/wiki/Vlad%C3%ADmir_Levensht%C3%A9in}{\tt Vladimir Levenshtein}, quien se ocupó de esta distancia en 1965. Es útil en programas que determinan cuán similares son dos cadenas de caracteres, como es el caso de los correctores de ortografía.
+
+Por ejemplo, la distancia de Levenshtein entre \char`\"{}casa\char`\"{} y \char`\"{}calle\char`\"{} es de 3 porque se necesitan al menos tres ediciones elementales para cambiar uno en el otro.
+
+
+\begin{DoxyItemize}
+\item casa → cala (sustitución de \textquotesingle{}s\textquotesingle{} por \textquotesingle{}l\textquotesingle{})
+\item cala → calla (inserción de \textquotesingle{}l\textquotesingle{} entre \textquotesingle{}l\textquotesingle{} y \textquotesingle{}a\textquotesingle{})
+\item calla → calle (sustitución de \textquotesingle{}a\textquotesingle{} por \textquotesingle{}e\textquotesingle{})
+\end{DoxyItemize}
+
+Se le considera una generalización de la \href{https://es.wikipedia.org/wiki/Distancia_de_Hamming}{\tt distancia de Hamming}, que se usa para cadenas de la misma longitud y que solo considera como operación la sustitución. Hay otras generalizaciones de la distancia de Levenshtein, como la \href{https://es.wikipedia.org/wiki/Distancia_de_Damerau-Levenshtein}{\tt distancia de Damerau-\/\+Levenshtein}, que consideran el intercambio de dos caracteres como una operación.
+
+Como buena \char`\"{}distancia\char`\"{}, cumple (aunque es complicado demostrarlo formalmente), que\+:
+
+
+\begin{DoxyItemize}
+\item Dist(\+A,\+B) == Dist(\+B,\+A)
+\item Dist(\+A,\+B) + Dist(\+B,\+C) $>$= Dist(\+A,\+C)
+\end{DoxyItemize}
+
+\subsection*{El Algoritmo\+:}
+
+Se trata de un \href{https://es.wikipedia.org/wiki/Algoritmo}{\tt algoritmo} de tipo bottom-\/up, común en \href{https://es.wikipedia.org/wiki/Programaci%C3%B3n_din%C3%A1mica}{\tt programación dinámica}. Se apoya en el uso de una matriz (n + 1) × (m + 1), donde n y m son las longitudes de las cadenas. Aquí se indica el algoritmo en \href{https://es.wikipedia.org/wiki/Pseudoc%C3%B3digo}{\tt pseudocódigo} para una función Levenshtein\+Distance que toma dos cadenas, str1 de longitud len\+Str1, y str2 de longitud len\+Str2, y calcula la distancia Levenshtein entre ellos\+: \begin{DoxyVerb}int LevenshteinDistance(char str1[1..lenStr1], char str2[1..lenStr2])
+    // d is a table with lenStr1+1 rows and lenStr2+1 columns
+    declare int d[0..lenStr1, 0..lenStr2]
+    // i and j are used to iterate over str1 and str2
+    declare int i, j, cost
+
+    for i from 0 to lenStr1
+        d[i, 0] := i
+    for j from 0 to lenStr2
+        d[0, j] := j
+
+    for i from 1 to lenStr1
+        for j from 1 to lenStr2
+            if str1[i-1] = str2[j-1]
+                then cost := 0
+            else
+                cost := 1
+
+            d[i, j] := minimum( d[i-1, j] + 1,      // deletion
+                                d[i, j-1] + 1,      // insertion
+                                d[i-1, j-1] + cost  // substitution
+                                )
+    return d[lenStr1, lenStr2]
+\end{DoxyVerb}
+
+
+\subsection*{Aplicaciones\+:}
+
+
+\begin{DoxyItemize}
+\item El proyecto A\+S\+JP usa la distancia de Levenshtein total en una lista de palabras en diferentes lenguas del mundo, para medir la \char`\"{}similaridad\char`\"{} o \char`\"{}cercanía\char`\"{} de las mismas, esa distancia calculada puede emplearse para proponer una clasificación filogenética tentativa de las lenguas del mundo.
+\item La distancia de Damerau-\/\+Levenshtein es una generalización de la distancia de Levenshtein usada por los correctores ortográficos y en la detección de fraudes en listas de datos. 
+\end{DoxyItemize}
