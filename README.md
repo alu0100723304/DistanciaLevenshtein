@@ -12,8 +12,8 @@ Se le considera una generalización de la [distancia de Hamming][5], que se usa 
 
 Como buena "distancia", cumple (aunque es complicado demostrarlo formalmente), que:
 
-    Dist(A,B) == Dist(B,A)
-    Dist(A,B) + Dist(B,C) >= Dist(A,C)
+   Dist(A,B) == Dist(B,A)
+   Dist(A,B) + Dist(B,C) >= Dist(A,C)
 
 [1]: https://es.wikipedia.org/wiki/Cadena_de_caracteres
 [2]: https://es.wikipedia.org/wiki/Teor%C3%ADa_de_la_informaci%C3%B3n
