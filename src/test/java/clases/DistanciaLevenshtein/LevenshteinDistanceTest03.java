@@ -5,8 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 /**
- * @author Joey
  * Test03 de la Distancia de Levenshtein.
+ * @author Joey
  */
 public class LevenshteinDistanceTest03 {
 	@Test

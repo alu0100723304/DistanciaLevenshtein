@@ -1,8 +1,8 @@
 package clases.DistanciaLevenshtein;
 
 /**
- * @author Joel Perez Ramos
  * Clase que implementa la Distancia de Levenshtein.
+ * @author Joel Perez Ramos
  */
 public class LevenshteinDistance {
 	/**
