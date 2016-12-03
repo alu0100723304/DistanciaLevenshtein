@@ -12,8 +12,11 @@ Se le considera una generalización de la [distancia de Hamming][5], que se usa 
 
 Como buena "distancia", cumple (aunque es complicado demostrarlo formalmente), que:
 
-   Dist(A,B) == Dist(B,A)  
-   Dist(A,B) + Dist(B,C) >= Dist(A,C)  
+* Dist(A,B) == Dist(B,A)
+* Dist(A,B) + Dist(B,C) >= Dist(A,C)
+
+## El Algoritmo:
+Se trata de un [algoritmo][7] de tipo bottom-up, común en [programación dinámica][8]. Se apoya en el uso de una matriz (n + 1) × (m + 1), donde n y m son las longitudes de las cadenas. Aquí se indica el algoritmo en [pseudocódigo][9] para una función LevenshteinDistance que toma dos cadenas, str1 de longitud lenStr1, y str2 de longitud lenStr2, y calcula la distancia Levenshtein entre ellos:
 
 [1]: https://es.wikipedia.org/wiki/Cadena_de_caracteres
 [2]: https://es.wikipedia.org/wiki/Teor%C3%ADa_de_la_informaci%C3%B3n
@@ -21,3 +24,7 @@ Como buena "distancia", cumple (aunque es complicado demostrarlo formalmente), q
 [4]: https://es.wikipedia.org/wiki/Vlad%C3%ADmir_Levensht%C3%A9in
 [5]: https://es.wikipedia.org/wiki/Distancia_de_Hamming
 [6]: https://es.wikipedia.org/wiki/Distancia_de_Damerau-Levenshtein
+[7]: https://es.wikipedia.org/wiki/Algoritmo
+[8]: https://es.wikipedia.org/wiki/Programaci%C3%B3n_din%C3%A1mica
+[9]: https://es.wikipedia.org/wiki/Pseudoc%C3%B3digo
+
