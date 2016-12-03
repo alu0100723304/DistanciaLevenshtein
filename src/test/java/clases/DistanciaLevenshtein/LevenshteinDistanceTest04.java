@@ -6,7 +6,7 @@ import org.junit.Test;
 
 /**
  * Test04 de la Distancia de Levenshtein.
- * @author Joey
+ * @author Joel Perez Ramos
  */
 public class LevenshteinDistanceTest04 {
 	@Test
