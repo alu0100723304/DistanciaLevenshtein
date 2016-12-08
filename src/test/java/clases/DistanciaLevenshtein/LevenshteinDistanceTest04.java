@@ -5,8 +5,9 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 /**
- * Test04 de la Distancia de Levenshtein.
- * @author Joel Perez Ramos
+ * \class LevenshteinDistanceTest04
+ * \brief Test04 de la Distancia de Levenshtein.
+ * \author Joel Perez Ramos
  */
 public class LevenshteinDistanceTest04 {
 	@Test

@@ -1,13 +1,14 @@
 package clases.DistanciaLevenshtein;
 
 /**
- * Clase Principal
- * @author Joel Perez Ramos
+ * \class App
+ * \brief Clase Principal
+ * \author Joel Perez Ramos
  */
 public class App {
 	/**
-	 * Main
-	 * @param args
+	 * \brief Main
+	 * \param args
 	 */
 	public static void main(String[] args) {
 		System.out.println("Prueba01: " + LevenshteinDistance.computeLevenshteinDistance("oslo", "oslo"));

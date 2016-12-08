@@ -5,8 +5,8 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 /**
- * AllTest de la Distancia de Levenshtein.
- * @author Joel Perez Ramos 
+ * \brief AllTest de la Distancia de Levenshtein.
+ * \author Joel Perez Ramos 
  */
 @RunWith(Suite.class)
 @SuiteClasses({AppTest.class, LevenshteinDistanceTest01.class,
