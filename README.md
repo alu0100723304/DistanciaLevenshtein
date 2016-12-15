@@ -42,6 +42,10 @@ Se trata de un [algoritmo][7] de tipo bottom-up, común en [programación dinám
 									)
 		return d[lenStr1, lenStr2]
 
+## Aplicaciones:
+* El proyecto ASJP usa la distancia de Levenshtein total en una lista de palabras en diferentes lenguas del mundo, para medir la "similaridad" o "cercanía" de las mismas, esa distancia calculada puede emplearse para proponer una clasificación filogenética tentativa de las lenguas del mundo.
+* La distancia de Damerau-Levenshtein es una generalización de la distancia de Levenshtein usada por los correctores ortográficos y en la detección de fraudes en listas de datos.
+
 [1]: https://es.wikipedia.org/wiki/Cadena_de_caracteres
 [2]: https://es.wikipedia.org/wiki/Teor%C3%ADa_de_la_informaci%C3%B3n
 [3]: https://es.wikipedia.org/wiki/Ciencias_de_la_computaci%C3%B3n
@@ -51,7 +55,3 @@ Se trata de un [algoritmo][7] de tipo bottom-up, común en [programación dinám
 [7]: https://es.wikipedia.org/wiki/Algoritmo
 [8]: https://es.wikipedia.org/wiki/Programaci%C3%B3n_din%C3%A1mica
 [9]: https://es.wikipedia.org/wiki/Pseudoc%C3%B3digo
-
-## Aplicaciones:
-* El proyecto ASJP usa la distancia de Levenshtein total en una lista de palabras en diferentes lenguas del mundo, para medir la "similaridad" o "cercanía" de las mismas, esa distancia calculada puede emplearse para proponer una clasificación filogenética tentativa de las lenguas del mundo.
-* La distancia de Damerau-Levenshtein es una generalización de la distancia de Levenshtein usada por los correctores ortográficos y en la detección de fraudes en listas de datos.
